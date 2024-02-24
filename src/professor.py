@@ -41,7 +41,4 @@ class Professor(Role):
 
 
 
-           # try:
-        #     print( read_data["zaban"]["39916341054461"])
-        # except KeyError:
-        #     print('Key does not exist.')
+        

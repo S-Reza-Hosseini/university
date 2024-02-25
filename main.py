@@ -4,23 +4,23 @@ from src.file_work import choose_file_name
 from src.reset_json import reset_json_file
 
 def main():
-    s1 = Student("reza", "hosseini", "39916341054465")
-    s1.pick_lecture("software engineering", "compiler")
+    student_1 = Student("reza", "hosseini", "39916341054465")
+    student_1.pick_lecture("software engineering", "compiler")
 
-    t1 = Professor("vahid", "safari", "1")
-    t2 = Professor("farzad", "ghahremani", "2")
+    teacher_1 = Professor("vahid", "safari", "1")
+    teacher_2 = Professor("roya", "behroozi", "2")
 
-    t = t1.take_lecture("software engineering" )
-    a = t2.take_lecture("compiler")
+    teacher_1.take_lecture("software engineering" )
+    teacher_2.take_lecture("compiler")
 
     giving_grade_1 = t1.give_grade("software engineering", 16.5)
-    giving_grade_2 = t2.give_grade("compiler" ,12)
+    giving_grade_2 = t2.give_grade("compiler" ,20)
 
     
     
     
 
-    return s1.status()
+    return student_1.status()
 
 
 print(main())

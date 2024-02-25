@@ -25,8 +25,6 @@ class Student(Role):
         save_lecture = save_lecture_in_json(load_path, info_dict)
 
 
-       
-      
     def avg(self):
         
         grade = fetch_grade_from_dict()

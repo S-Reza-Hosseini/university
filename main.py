@@ -1,20 +1,30 @@
 from src.student import Student
 from src.professor import Professor
+from src.file_work import choose_file_name
+from src.reset_json import reset_json_file
 
 def main():
+    s1 = Student("reza", "hosseini", "39916341054465")
+    s1.pick_lecture("software engineering", "compiler")
 
-    s1 = Student("reza", "hosseini", "39916341054461")
-    inp_course = s1.pick_lecture("zaban", "compiler", "adabiat", "shimi")
+    t1 = Professor("vahid", "safari", "1")
+    t2 = Professor("farzad", "ghahremani", "2")
+
+    t = t1.take_lecture("software engineering" )
+    a = t2.take_lecture("compiler")
+
+    giving_grade_1 = t1.give_grade("software engineering", 16.5)
+    giving_grade_2 = t2.give_grade("compiler" ,12)
+
+    
+    
     
 
-    
-    # t1 = Professor("vahid", "safari", "1")
-    # give_grade = t1.give_grade(16.5)
-    # take_lecture = t1.take_lecture("zaban", "compiler", "adabit","shimi")
+    return s1.status()
 
-    # t2 = Professor("sayed taleb", "mousavi" , "2")
-    # give_grade = t1.give_grade(16.5)
-    # take_lecture("shimi")
-    # return take_lecture
 
 print(main())
+
+path = choose_file_name()
+reset_json_file(path)
+    
